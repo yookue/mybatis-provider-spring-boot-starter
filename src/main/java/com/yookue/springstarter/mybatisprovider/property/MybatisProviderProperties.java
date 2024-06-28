@@ -1,0 +1,44 @@
+/*
+ * Copyright (c) 2020 Yookue Ltd. All rights reserved.
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *     https://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+
+package com.yookue.springstarter.mybatisprovider.property;
+
+
+import org.springframework.boot.context.properties.ConfigurationProperties;
+import com.yookue.springstarter.mybatisprovider.config.MybatisProviderAutoConfiguration;
+import lombok.Getter;
+import lombok.Setter;
+import lombok.ToString;
+
+
+@ConfigurationProperties(prefix = MybatisProviderAutoConfiguration.PROPERTIES_PREFIX)
+@Getter
+@Setter
+@ToString
+@SuppressWarnings("unused")
+public class MybatisProviderProperties {
+    /**
+     * Indicates whether to enable this starter or not
+     * <p>
+     * Default is {@code true}
+     */
+    private Boolean enabled = true;
+
+    /**
+     * The mybatis config resource url
+     */
+    private String configFile = "classpath:/META-INF/mybatis/database-id-provider.xml";    // $NON-NLS-1$
+}

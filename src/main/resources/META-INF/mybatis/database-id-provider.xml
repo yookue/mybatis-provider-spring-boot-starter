@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!--
+ * Copyright (c) 2020 Yookue Ltd. All rights reserved.
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *     https://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+-->
+
+
+<!-- Configuration for DatabaseIdProvider of mybatis -->
+<!-- @author David Hsing -->
+<!-- {@link "http://www.mybatis.org/mybatis-3/zh/configuration.html#databaseIdProvider"} -->
+<!-- {@link "https://db-engines.com/en/ranking/relational+dbms"} -->
+<!-- @see org.springframework.boot.jdbc.DatabaseDriver -->
+<!-- @see org.springframework.orm.jpa.vendor.Database -->
+<!-- @see com.alibaba.druid.util.JdbcConstants -->
+<!DOCTYPE configuration>
+<configuration>
+    <databaseIdProvider type="DB_VENDOR">
+        <property name="1010data" value="1010data"/>
+        <property name="4D" value="4d"/>
+        <property name="Access" value="access"/>
+        <property name="Actian Vector" value="actianvector"/>
+        <property name="Actian PSQL" value="actianpsql"/>
+        <property name="ActorDB" value="actordb"/>
+        <property name="AgensGraph" value="agensgraph"/>
+        <property name="AliOracle" value="alioracle"/>
+        <property name="Altibase" value="altibase"/>
+        <property name="AnalyticDB" value="analyticdb"/>
+        <property name="ApsaraDB" value="apsaradb"/>
+        <property name="Aurora" value="aurora"/>
+        <property name="BigObject" value="bigobject"/>
+        <property name="BigQuery" value="bigquery"/>
+        <property name="Brytlyt" value="brytlyt"/>
+        <property name="ClickHouse" value="clickhouse"/>
+        <property name="CloudTable" value="cloudtable"/>
+        <property name="Citus" value="citus"/>
+        <property name="CockroachDB" value="cockroachdb"/>
+        <property name="Comdb2" value="comdb2"/>
+        <property name="Cosmos DB" value="cosmosdb"/>
+        <property name="CovenantSQL" value="covenantsql"/>
+        <property name="CrateDB" value="cratedb"/>
+        <property name="Cubrid" value="cubrid"/>
+        <property name="DaggerDB" value="daggerdb"/>
+        <property name="Datacom/DB" value="datacomdb"/>
+        <property name="DataEase" value="dataease"/>
+        <property name="Datomic" value="datomic"/>
+        <property name="DB2" value="db2"/>
+        <property name="DBISAM" value="dbisam"/>
+        <property name="Derby" value="derby"/>
+        <property name="DM" value="dm"/>
+        <property name="Drill" value="drill"/>
+        <property name="Druid" value="druid"/>
+        <property name="DuckDB" value="duckdb"/>
+        <property name="dBASE" value="dbase"/>
+        <property name="EDB" value="edb"/>
+        <property name="ElevateDB" value="elevatedb"/>
+        <property name="Empress" value="empress"/>
+        <property name="EsgynDB" value="esgyndb"/>
+        <property name="Essbase" value="essbase"/>
+        <property name="EXASOL" value="exasol"/>
+        <property name="Fauna" value="fauna"/>
+        <property name="FileMaker" value="filemaker"/>
+        <property name="Firebird" value="firebird"/>
+        <property name="FrontBase" value="frontbase"/>
+        <property name="Fusion-NewSQL" value="fusionnewsql"/>
+        <property name="GaussDB" value="gaussdb"/>
+        <property name="GeoSpock" value="geospock"/>
+        <property name="GoldenDB" value="goldendb"/>
+        <property name="GreatDB" value="greatdb"/>
+        <property name="H2" value="h2"/>
+        <property name="H3C DataEngine" value="h3cdataengine"/>
+        <property name="HAWQ" value="hawq"/>
+        <property name="HBase" value="hbase"/>
+        <property name="HDB" value="hdb"/>
+        <property name="HFSQL" value="hfsql"/>
+        <property name="Hive" value="hive"/>
+        <property name="HSQL" value="hsql"/>
+        <property name="HuaBase" value="huabase"/>
+        <property name="HyperSQL" value="hypersql"/>
+        <property name="GaussDB" value="gaussdb"/>
+        <property name="GBase" value="gbase"/>
+        <property name="Grakn" value="grakn"/>
+        <property name="Greenplum" value="greenplum"/>
+        <property name="GridGain" value="gridgain"/>
+        <property name="Ignite" value="ignite"/>
+        <property name="Impala" value="impala"/>
+        <property name="Infobright" value="infobright"/>
+        <property name="Informix" value="informix"/>
+        <property name="Ingres" value="ingres"/>
+        <property name="Interbase" value="interbase"/>
+        <property name="IoTDB" value="iotdb"/>
+        <property name="ITTIA" value="ittia"/>
+        <property name="JethroData" value="jethrodata"/>
+        <property name="JTDS" value="jtds"/>
+        <property name="Kinetica" value="kinetica"/>
+        <property name="Kingbase" value="kingbase"/>
+        <property name="KingDB" value="kingdb"/>
+        <property name="Kognitio" value="kognitio"/>
+        <property name="Kyligence" value="kyligence"/>
+        <property name="Kylin" value="kylin"/>
+        <property name="K-DB" value="kdb"/>
+        <property name="LeanXcale" value="leanxcale"/>
+        <property name="LightDB" value="lightdb"/>
+        <property name="Linter" value="linter"/>
+        <property name="Lovefield" value="lovefield"/>
+        <property name="MariaDB" value="mariadb"/>
+        <property name="MaxCompute" value="maxcompute"/>
+        <property name="MaxDB" value="maxdb"/>
+        <property name="Mimer SQL" value="mimersql"/>
+        <property name="MonetDB" value="monetdb"/>
+        <property name="MySQL" value="mysql"/>
+        <property name="mSQL" value="msql"/>
+        <property name="Neo4j" value="neo4j"/>
+        <property name="Netezza" value="netezza"/>
+        <property name="NexusDB" value="nexusdb"/>
+        <property name="NonStop SQL" value="nonstopsql"/>
+        <property name="NuoDB" value="nuodb"/>
+        <property name="OceanBase" value="oceanbase"/>
+        <property name="ODPS" value="odps"/>
+        <property name="OmniSci" value="omnisci"/>
+        <property name="Oracle" value="oracle"/>
+        <property name="Oracle Rdb" value="oraclerdb"/>
+        <property name="OpenBase" value="openbase"/>
+        <property name="OpenEdge" value="openedge"/>
+        <property name="OpenGauss" value="opengauss"/>
+        <property name="PalarDB" value="palardb"/>
+        <property name="Phoenix" value="phoenix"/>
+        <property name="PipelineDB" value="pipelinedb"/>
+        <property name="PolarDB" value="polardb"/>
+        <property name="PostgreSQL" value="postgresql"/>
+        <property name="Presto" value="presto"/>
+        <property name="Raima" value="raima"/>
+        <property name="Redshift" value="redshift"/>
+        <property name="R:BASE" value="rbase"/>
+        <property name="SAP IQ" value="sapiq"/>
+        <property name="Sadas" value="sadas"/>
+        <property name="ScaleArc" value="scalearc"/>
+        <property name="SequoiaDB" value="sequoiadb"/>
+        <property name="ShenTong" value="shentong"/>
+        <property name="SingleStore" value="singlestore"/>
+        <property name="SmallSQL" value="smallsql"/>
+        <property name="Snowflake" value="snowflake"/>
+        <property name="Spark SQL" value="sparksql"/>
+        <property name="SQL Server" value="sqlserver"/>
+        <property name="SQLBase" value="sqlbase"/>
+        <property name="SQLite" value="sqlite"/>
+        <property name="SQL.JS" value="sqljs"/>
+        <property name="SQream DB" value="sqreamdb"/>
+        <property name="Sybase" value="sybase"/>
+        <property name="solidDB" value="soliddb"/>
+        <property name="Tajo" value="tajo"/>
+        <property name="TBase" value="tbase"/>
+        <property name="Tdengine" value="tdengine"/>
+        <property name="TDSQL" value="tdsql"/>
+        <property name="Teradata" value="teradata"/>
+        <property name="Testcontainers" value="testcontainers"/>
+        <property name="TiDB" value="tidb"/>
+        <property name="TimesTen" value="timesten"/>
+        <property name="Tibero" value="tibero"/>
+        <property name="Transbase" value="transbase"/>
+        <property name="TransLattice" value="translattice"/>
+        <property name="Trino" value="trino"/>
+        <property name="Valentina Server" value="valentinaserver"/>
+        <property name="Vertica" value="vertica"/>
+        <property name="Vitess" value="vitess"/>
+        <property name="VistaDB" value="vistadb"/>
+        <property name="VoltDB" value="voltdb"/>
+        <property name="XtremeData" value="xtremedata"/>
+        <property name="XuGu" value="xugu"/>
+        <property name="Yaacomo" value="yaacomo"/>
+        <property name="Yellowbrick" value="yellowbrick"/>
+        <property name="YugabyteDB" value="yugabytedb"/>
+        <property name="Zilliz" value="zilliz"/>
+    </databaseIdProvider>
+</configuration>

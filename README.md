@@ -17,14 +17,17 @@ Spring Boot application integrates `mybatis` quickly, to support different state
 > By default, this starter will auto take effect, you can turn it off by `spring.mybatis-provider.enabled = false`
 
 - Configure Spring Boot `application.yml` with prefix `spring.mybatis-provider` (**Optional**)
+
 ```yml
 spring:
     mybatis-provider:
         configFile: 'classpath:/META-INF/mybatis/database-id-provider.xml'
 ```
+
 This will create a `DatabaseIdProvider` bean, which supports most popular relational databases in the world.
 
 - Write your mybatis mapper statements as following:
+
 ```xml
 <select id="foo" resultType="bar" databaseId="mysql">
 </select>

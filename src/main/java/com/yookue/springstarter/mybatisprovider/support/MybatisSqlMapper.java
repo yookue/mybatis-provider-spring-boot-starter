@@ -12,8 +12,6 @@ package com.yookue.springstarter.mybatisprovider.support;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
-import javax.annotation.Nonnull;
-import javax.annotation.Nullable;
 import org.apache.commons.lang3.StringUtils;
 import org.apache.ibatis.builder.StaticSqlSource;
 import org.apache.ibatis.exceptions.TooManyResultsException;
@@ -24,6 +22,8 @@ import org.apache.ibatis.mapping.SqlSource;
 import org.apache.ibatis.scripting.LanguageDriver;
 import org.apache.ibatis.session.Configuration;
 import org.apache.ibatis.session.SqlSession;
+import jakarta.annotation.Nonnull;
+import jakarta.annotation.Nullable;
 
 
 /**
@@ -142,7 +142,7 @@ public class MybatisSqlMapper {
         }
 
         private void newSelectStatement(@Nonnull String statementId, @Nonnull SqlSource sqlSource, @Nonnull Class<?> resultType) {
-            MappedStatement statement = new MappedStatement.Builder(configuration, statementId, sqlSource, SqlCommandType.SELECT).resultMaps(new ArrayList<ResultMap>() {
+            MappedStatement statement = new MappedStatement.Builder(configuration, statementId, sqlSource, SqlCommandType.SELECT).resultMaps(new ArrayList<>() {
                 {
                     add(new ResultMap.Builder(configuration, "defaultResultMap", resultType, new ArrayList<>(0)).build());    // $NON-NLS-1$
                 }
@@ -151,7 +151,7 @@ public class MybatisSqlMapper {
         }
 
         private void newUpdateStatement(@Nonnull String statementId, @Nonnull SqlSource sqlSource, @Nonnull SqlCommandType commandType) {
-            MappedStatement statement = new MappedStatement.Builder(configuration, statementId, sqlSource, commandType).resultMaps(new ArrayList<ResultMap>() {
+            MappedStatement statement = new MappedStatement.Builder(configuration, statementId, sqlSource, commandType).resultMaps(new ArrayList<>() {
                 {
                     add(new ResultMap.Builder(configuration, "defaultResultMap", int.class, new ArrayList<>(0)).build());    // $NON-NLS-1$
                 }

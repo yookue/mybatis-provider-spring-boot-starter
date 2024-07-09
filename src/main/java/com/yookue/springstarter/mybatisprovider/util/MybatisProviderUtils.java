@@ -20,8 +20,6 @@ package com.yookue.springstarter.mybatisprovider.util;
 import java.io.FileNotFoundException;
 import java.io.InputStream;
 import java.util.Properties;
-import javax.annotation.Nonnull;
-import javax.annotation.Nullable;
 import javax.xml.parsers.DocumentBuilder;
 import javax.xml.parsers.DocumentBuilderFactory;
 import org.apache.commons.lang3.StringUtils;
@@ -32,6 +30,8 @@ import org.w3c.dom.Node;
 import org.w3c.dom.NodeList;
 import com.yookue.commonplexus.javaseutil.constant.StringVariantConst;
 import com.yookue.commonplexus.springutil.util.ResourceUtilsWraps;
+import jakarta.annotation.Nonnull;
+import jakarta.annotation.Nullable;
 
 
 /**
@@ -57,10 +57,9 @@ public abstract class MybatisProviderUtils {
             NodeList nodes = document.getDocumentElement().getElementsByTagName(StringVariantConst.PROPERTY);
             for (int i = 0; i < nodes.getLength(); i++) {
                 Node node = nodes.item(i);
-                if (!(node instanceof Element)) {
+                if (!(node instanceof Element element)) {
                     continue;
                 }
-                Element element = (Element) node;
                 String name = element.getAttribute(StringVariantConst.NAME), value = element.getAttribute(StringVariantConst.VALUE);
                 if (StringUtils.isNoneBlank(name, value)) {
                     result.put(name, value);

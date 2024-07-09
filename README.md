@@ -44,7 +44,7 @@ This will create a `DatabaseIdProvider` bean, which supports most popular relati
 
 ## Requirement
 
-- jdk 1.8+
+- jdk 17+
 
 ## License
 

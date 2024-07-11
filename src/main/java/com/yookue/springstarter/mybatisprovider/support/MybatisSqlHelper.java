@@ -13,7 +13,6 @@ import java.lang.reflect.Method;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
-import jakarta.annotation.Nullable;
 import org.apache.commons.lang3.ArrayUtils;
 import org.apache.commons.lang3.ClassUtils;
 import org.apache.commons.lang3.ObjectUtils;
@@ -34,6 +33,7 @@ import org.apache.ibatis.type.JdbcType;
 import org.apache.ibatis.type.TypeHandlerRegistry;
 import org.springframework.util.CollectionUtils;
 import org.springframework.util.ReflectionUtils;
+import jakarta.annotation.Nullable;
 
 
 /**
@@ -75,7 +75,7 @@ public abstract class MybatisSqlHelper {
     }
 
     @Nullable
-    @SuppressWarnings({"unchecked", "rawtypes", "ConstantConditions"})
+    @SuppressWarnings({"unchecked", "rawtypes", "DataFlowIssue"})
     public static String getMapperSql(@Nullable SqlSession session, @Nullable Class<?> mapperClazz, @Nullable String methodName, @Nullable Object... args) {
         if (ObjectUtils.anyNull(session, mapperClazz) || StringUtils.isBlank(methodName)) {
             return null;

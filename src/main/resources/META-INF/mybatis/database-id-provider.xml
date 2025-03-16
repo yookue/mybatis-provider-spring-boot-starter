@@ -18,7 +18,7 @@
 
 <!-- Configuration for DatabaseIdProvider of mybatis -->
 <!-- @author David Hsing -->
-<!-- {@link "http://www.mybatis.org/mybatis-3/zh/configuration.html#databaseIdProvider"} -->
+<!-- {@link "https://mybatis.org/mybatis-3/configuration.html#databaseIdProvider"} -->
 <!-- {@link "https://db-engines.com/en/ranking/relational+dbms"} -->
 <!-- @see org.springframework.boot.jdbc.DatabaseDriver -->
 <!-- @see org.springframework.orm.jpa.vendor.Database -->
@@ -41,9 +41,10 @@
         <property name="BigObject" value="bigobject"/>
         <property name="BigQuery" value="bigquery"/>
         <property name="Brytlyt" value="brytlyt"/>
+        <property name="chDB" value="chdb"/>
+        <property name="Citus" value="citus"/>
         <property name="ClickHouse" value="clickhouse"/>
         <property name="CloudTable" value="cloudtable"/>
-        <property name="Citus" value="citus"/>
         <property name="CockroachDB" value="cockroachdb"/>
         <property name="Comdb2" value="comdb2"/>
         <property name="Cosmos DB" value="cosmosdb"/>
@@ -138,9 +139,11 @@
         <property name="PipelineDB" value="pipelinedb"/>
         <property name="PolarDB" value="polardb"/>
         <property name="PostgreSQL" value="postgresql"/>
+        <property name="PostgresXL" value="postgresxl"/>
         <property name="Presto" value="presto"/>
         <property name="Raima" value="raima"/>
         <property name="Redshift" value="redshift"/>
+        <property name="RisingWave" value="risingwave"/>
         <property name="R:BASE" value="rbase"/>
         <property name="SAP IQ" value="sapiq"/>
         <property name="Sadas" value="sadas"/>
@@ -178,8 +181,8 @@
         <property name="XtremeData" value="xtremedata"/>
         <property name="XuGu" value="xugu"/>
         <property name="Yaacomo" value="yaacomo"/>
+        <property name="YDB" value="ydb"/>
         <property name="Yellowbrick" value="yellowbrick"/>
         <property name="YugabyteDB" value="yugabytedb"/>
-        <property name="Zilliz" value="zilliz"/>
     </databaseIdProvider>
 </configuration>

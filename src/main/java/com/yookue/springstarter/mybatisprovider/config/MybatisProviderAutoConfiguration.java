@@ -17,18 +17,18 @@
 package com.yookue.springstarter.mybatisprovider.config;
 
 
-import jakarta.annotation.Nonnull;
 import org.apache.ibatis.mapping.DatabaseIdProvider;
 import org.apache.ibatis.mapping.VendorDatabaseIdProvider;
 import org.apache.ibatis.session.SqlSession;
+import org.springframework.boot.autoconfigure.condition.ConditionalOnBooleanProperty;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnClass;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnMissingBean;
-import org.springframework.boot.autoconfigure.condition.ConditionalOnProperty;
 import org.springframework.boot.context.properties.EnableConfigurationProperties;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import com.yookue.springstarter.mybatisprovider.property.MybatisProviderProperties;
 import com.yookue.springstarter.mybatisprovider.util.MybatisProviderUtils;
+import jakarta.annotation.Nonnull;
 
 
 /**
@@ -41,7 +41,7 @@ import com.yookue.springstarter.mybatisprovider.util.MybatisProviderUtils;
  * @see org.apache.ibatis.mapping.DatabaseIdProvider
  */
 @Configuration(proxyBeanMethods = false)
-@ConditionalOnProperty(prefix = MybatisProviderAutoConfiguration.PROPERTIES_PREFIX, name = "enabled", havingValue = "true", matchIfMissing = true)
+@ConditionalOnBooleanProperty(prefix = MybatisProviderAutoConfiguration.PROPERTIES_PREFIX, name = "enabled", matchIfMissing = true)
 @ConditionalOnClass(value = SqlSession.class)
 @EnableConfigurationProperties(value = MybatisProviderProperties.class)
 @SuppressWarnings({"JavadocDeclaration", "JavadocLinkAsPlainText"})

@@ -8,7 +8,7 @@ Spring Boot application integrates `mybatis` quickly, to support different state
 
 ```xml
     <dependency>
-        <groupId>com.yookue.springstarter</groupId>
+        <groupId>cn.unikue.springstarter</groupId>
         <artifactId>mybatis-provider-spring-boot-starter</artifactId>
         <version>LATEST</version>
     </dependency>
@@ -37,7 +37,7 @@ This will create a `DatabaseIdProvider` bean, which supports most popular relati
 
 ## Document
 
-- Github: https://github.com/yookue/mybatis-provider-spring-boot-starter
+- Github: https://github.com/unikueltd/mybatis-provider-spring-boot-starter
 - Mybatis homepage: https://mybatis.org/mybatis-3
 - Mybatis github: https://github.com/mybatis/mybatis-3
 - Relational databases: https://db-engines.com/en/ranking/relational+dbms
@@ -54,12 +54,12 @@ See the `NOTICE.txt` file for required notices and attributions.
 
 ## Donation
 
-You like this package? Then [donate to us](https://yookue.com/donation) to support the development.
+You like this package? Then [donate to us](https://unikue.cn/donation) to support the development.
 
 ## Copyright
 
-Beijing Yookue Network Technology Ltd.
+Beijing Unikue Network Technology Ltd.
 
 ## Website
 
-- Yookue: https://yookue.com
+- Unikue: https://unikue.cn
